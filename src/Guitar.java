@@ -1,28 +1,7 @@
-public class Guitar {
-
-    private String serialNumber, model;
-    private double price;
-    private GuitarSpec spec;
+public class Guitar extends Instrument {
 
     public Guitar (String serialNumber, double price, GuitarSpec spec) {
-        this.serialNumber = serialNumber;
-        this.price = price;
-        this.spec = spec;
-    }
-    
-    public String getSerialNumber() {
-        return serialNumber;
+        super(serialNumber, price, spec);
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double newPrice) {
-        this.price = newPrice;
-    }
-
-    public GuitarSpec getSpec() {
-        return spec;
-    }
 }
